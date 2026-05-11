@@ -6,3 +6,9 @@
 ### important 
 ### Variables 
 ### Opertors 
+
+
+## What is python ?
+### Python is programming language 
+### It is simple to learn and easy to understand 
+### It is used for basically bankend 
