@@ -1,6 +1,6 @@
 import math 
 import numpy as np
-
+import pandas as pd 
 # Write a program to add two number 
 num1 = 12
 num2 = 23
@@ -71,3 +71,63 @@ print(reshped_arr)
 arr = np.array([46,76,89,89,98,89])
 reshpes = arr.reshape(3,2)
 print(reshpes)
+
+# crete array and do reshape 
+# arr = np.array([45,57,99,98,34,56,78])
+# reshpe = arr.reshape(2,3)
+# print(reshpe)
+
+# how to use zeros and ones in numpy
+
+arr = np.zeros((3,4))
+print(arr)
+
+# create array with all values = 1
+arr = np.ones((3,5))
+
+print(arr)
+
+# Create a array and do arange
+
+arr = np.arange(1,20,3)
+print(arr)
+
+#create array ans do linspace 
+arr = np.linspace(1,4,5)
+print(arr)
+
+# Array operations in numpy
+
+arr = np.array([24,35,76,89,56])
+print(arr + 10)
+print(arr - 10)
+print(arr * 2)
+print(arr / 2)
+print(arr ** 2)
+
+# Methodmetical function in numpy
+
+arr = np.array([23,45,67,89,56,34])
+print("The sum of the array is ", np.sum(arr))
+print("The mean of the array is", np.mean(arr))
+# Mean is the average of the array 
+# sum is the total of the array 
+
+print("The standard deviation of the array is" , np.std(arr))
+print("The variance of the array is " , np.var(arr))
+# Low variance mean the data is close to the mean 
+# High variance mean the data is far from the mean 
+
+data = np.array([200,230,240,250,260,270])
+
+print("The mean of the data is " , np.mean(data))
+
+
+# Show the version of pandas 
+print(pd.__version__)
+
+df = pd.DataFrame({
+    "Name": ["Anil" , "Sunaina" , "Dipanshu" ],
+    "Age": [23,25.27,24]
+})
+print(df)
