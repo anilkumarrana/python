@@ -7,8 +7,13 @@
 ### Variables 
 ### Opertors 
 
-
 ## What is python ?
 ### Python is programming language 
 ### It is simple to learn and easy to understand 
 ### It is used for basically bankend 
+
+## Why python ??
+### python use for diffrent plateform (Windonw , Macbook, Rasberry etc)
+### Python has a smpile syntex as english language
+### Python code run on interpreter system the code excuted as soon as.
+
