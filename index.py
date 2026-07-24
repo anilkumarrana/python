@@ -1,4 +1,5 @@
-import math 
+import math
+from urllib import response 
 import numpy as np
 import pandas as pd 
 # Write a program to add two number 
@@ -131,3 +132,45 @@ df = pd.DataFrame({
     "Age": [23,25.27,24]
 })
 print(df)
+
+def greet (name):
+    print("Hello " , name , "Welcome to python programming")
+greet("Anil")
+
+
+def get_choices():
+    choices = ["rock", "Anil", "Sunaina "]
+    return choices
+# response = get_choices()
+choices = get_choices()
+print("The choices are: ", choices)
+
+
+# formatting the code in pyhton 
+
+greeting = "Hello"
+name = "Anil"
+
+message =  'Welcome , {} . {} !' .format(greeting, name) 
+print(message)
+
+# Boolean values in python 
+
+bool()
+
+my_name  = "Anil rana"
+my_name.isalnum()
+
+print(my_name.isalnum())
+print(my_name.isdecimal())
+
+
+# List in python 
+# List is a collection of items in a particular order.
+# List is a mutable data type in python.
+# List can change the values of the list after it is created.
+# List can contain duplicate values..
+# List defined by square brackets [].
+
+list = ["Anil" , "Sunaina" , "Dipanshu"]
+type(list)
