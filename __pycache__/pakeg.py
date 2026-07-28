@@ -1,3 +1,4 @@
+# import numpy as np
 import numpy as np
 # Here we will learn library of python and how we can use
 # 01 Numpy
@@ -82,15 +83,15 @@ print(type(arr))
 
 # NumPy Arrays provides the ndim attribute that returns an integer that tells us how many dimensions the array have.
 
-a = np.array(42)
-b = np.array([1,2,3])
-c = np.array([[34,56,89] , [13,45,89] , [24,89,90]])
-d = np.array([[[45,67,12,14,15], [45,78,90,54]],[[56,78,23,45],[56,78,34,23]]])
+# a = np.array(42)
+# b = np.array([1,2,3])
+# c = np.array([[34,56,89] , [13,45,89] , [24,89,90]])
+# d = np.array([[[45,67,12,14,15], [45,78,90,54]],[[56,78,23,45],[56,78,34,23]]])
 
-print(a.ndim)
-print(b.ndim)
-print(c.ndim)
-print(d.ndim)
+# print(a.ndim)
+# print(b.ndim)
+# print(c.ndim)
+# print(d.ndim)
 
 # Higher Dimensional Array
 # An Array can have any number of dimensions
@@ -102,3 +103,58 @@ print(d.ndim)
 arr = np.array([1,2,3,4] , ndmin=5)
 print(arr)
 print('Number of dimension :', arr.ndim )
+
+# write a  program and print Array index.
+
+arr = np.array([34,67,89,90])
+print (arr[1])
+
+arr01 = np.array([1,2,4,5,6])
+print(arr01[1] + arr01[2])
+
+
+# Acces the 2 D Array
+# Ton acces element from  2-D Array we can use comma separated integers representing the dimension and the index of the element.
+
+# if we have 2-D Array, So how get index element 
+
+# Access the element on the first row , second columns,
+
+arr = np.array([[57,89,97,45] , [34,67,90,34]])
+print ("2nd element on the 1st row",arr[1,2])
+
+# Acces the element on the first row , fiveth column
+
+arr = np.array([[765,786,890,342,568] , [658,894,1243,567,972]])
+print ("fiveth element on the 2nd column" , arr[1,4])
+
+# slicing in python 
+#Slicing in  python means taking element from one given index to onther index.
+
+# we pass slice the instead of index like this :[strat : end ]
+# We can slice instead of index like this :- [start : end : stpe]
+
+# if we  do not pass start its considered 0
+# if we do not pass ends its considered length of array i that dimension.
+# if we do not pass step its considered 1
+
+# like 
+
+arr = np.array([45,78,90,6,56,345])
+print (arr[1:5])
+print (arr[1:4:2])
+
+#  write the code and print slice element from the beginning to index 4 (not included)
+
+arr = ([56,88,90,34,13])
+print(arr[:2])
+print (arr[2:])
+
+# Negative slicing 
+# use the minus opetators to refer to an index from the the end.
+
+arr  = np.array([45,78,90,45,23,5])
+print(arr[-3 : -1])
+
+arr =np.array([[34,67,89,] , [65,89,56]])
+print(arr[1:0 , 2:1])
