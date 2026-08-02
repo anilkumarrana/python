@@ -158,3 +158,51 @@ print(arr[-3 : -1])
 
 arr =np.array([[34,67,89,] , [65,89,56]])
 print(arr[1:0 , 2:1])
+
+
+# Data type:- Data type are clssification that tells the interpreter what kind of value and variale hold and opertion can be performed on it.
+
+# There are following type of data 
+
+# Interger 
+# Floating 
+# Chareter
+# Boolean 
+# comflex
+
+# Data Type I=in numpy 
+# Numpy has some exter type,and  refer to data type with one character. Like I for interger, U for unsingned intergers.
+
+# 01 I - Interger
+# o2 b - Boolean 
+# 03 u - unsigned interger 
+# 04 c - complex float
+# m - timedelte 
+# M - datetime 
+# o - object \
+# s - string 
+# U - unicode string 
+# V - fixed chunk of memory for other type 
+
+# Checking the data type of An array:- The Numpy Array object has a property called dtype that returns the data type of the array 
+
+arr = np.array([56,90,56,34,24,56])
+
+print(arr.dtype)
+
+arr= np.array(["Anil" , "Sunaina" , "Sunil" , "Buchu"])
+print(arr.dtype)
+
+# If we want converting the data type in numpy 
+# We can use astype()
+
+# create a array by using looking 
+
+l = []
+
+for i in range(1,5):
+    int_1 = input("Enter the list: ")
+    l.append(int_1)
+print(np.array(l))
+
+print (l)
