@@ -56,5 +56,33 @@
 ## Get the Type 
 ### You can get the type of variable with the type() function.
 
+# Python Variaable - Assign Multiple valuse 
+### Many values to Multiple variable.
+
+### Python allows you to assign values to multiple Variable in one line.
+### x,y,z = "Anil", "Sunaina" , "Buchu"
+### print(x)
+### print(y)
+### print(z)
+
+### Note :- Make sure the number of variable matches the number of values, Or else you get error.
+
+## Unpack a collection 
+### If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called unpacking.
+### fruits = ["apple", "banana", "cherry"]
+### x, y, z = fruits
+### print(x)
+### print(y)
+### print(z)
+
+# Global Variable and local variable
+## Global variable :- Global variable are created outside of a function called global variabl.
+## Global variable can be used by everyone, both inside of function and outside of function.
+
+### x = "awesome"
+### def myfun():
+### print ("python is " + x )
+### myfun()
+
 
 
