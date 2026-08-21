@@ -1,3 +1,6 @@
+
+from array import 
+
 # Write the program print "Hello world"
 print("Hello, World")
 
