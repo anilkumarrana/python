@@ -200,10 +200,6 @@ print(thinkset)
 # Note :- If remove the items by using remove() keyword and the items does not exist , remove will raise the error.
 # Like 
 
-thinkset = {"Anil", "Sunaina" , "Sunil" , "shivani" , "Buchu"}
-thinkset.remove("Shimran")
-print(thinkset)
-
 # It is showing error but you are using discard they will be not showing error.
 
 thinkset = {"Anil" , "Sunaina" , "Sunil" , "Dipanshu" }
@@ -221,15 +217,90 @@ print(thinkset)
 
 # Note :- Sets are unordred , So when using the pop () method, You do not which item that gets removed.
 
-# The clear() method empties the set.
 
-thinkset = {"Anil" , "Sunaina", "Sunil", "Buchu"}
-thinkset.clear()
-print(thinkset)
+# Array in python 
 
-# The del keyword will delete the set completely:
+# one diameantion 
+# Two diamenation 
 
-thinkset = {"Anil" , "Sunil" , "Sunina" , "Buchu"}
-del thinkset
+# operator in python 
 
-print(thinkset)
+# operator is a symbol that is used to perform operations on variables and values.
+# There are many types of operators in python like arithmetic operator, assignment operator, comparison operator, logical operator, identity operator, membership operator.
+
+# Arithmetic operator :- Arithmetic operator is used to perform mathematical operations like addition, subtraction, multiplication, division, modulus, exponentiation and floor division.
+ 
+x = 10
+y = 5
+
+z = y + x
+a = y - x
+print("The sum of x and y is:" , z)
+print("The Subtraction of x and y is:" , a)
+print("The multiplication of x and y is:" , x*y)
+print("The modulus of x and y is:" , x%y)
+print("The exponentiation of x and y is:" , x**y)
+print("The floor division of x and y is:" , x//y)
+
+# Assignment operator :- Assignment operator is used to assign values to variables. The assignment operator is represented by the equal sign (=). 
+
+# Write a code for assignment operator in python.
+
+days = str(input("Enter the name of days:"))
+
+if days == "Sunday":
+    print("It's party night")
+else:
+    print("It's not party night")
+
+    
+
+# logical opertors 
+# There are three type of logical opertors 
+# 01 And :- returns ture value if both condition will be ture.
+# 02 or :- returns ture valuse if one statements will be ture.
+# 03 not :- reverse the result 
+
+
+# Write a Python program to check if a number is greater than 10 and less than 50 using and .
+
+num = 14 
+
+if num > 10 and num < 50:
+    print("The number is greather")
+else:
+    print("The number is not greather")
+
+# Write a program to check whether a person is eligible for vote.
+# condition :- Age must be 18 or above.
+
+age = int(input("Enter the age: "))
+
+if age > 18:
+    print("You are eligible for vote.")
+else:
+    print("You are not eligible for vote.")
+
+# Write the program to check whether a number is divisible by both 3 and 5
+
+num = int(input("Enter the number"))
+
+if num % 3 == 0 and num % 5 ==0 :
+    print("The number is divisible by 3 and 5" , num)
+else:
+    print("The number is not divisible by 3 and 5" , num)
+
+
+# Write the program whether a student has passed or not ?
+# condition :- marks must be 40 or above in both subject.
+
+sub01 = int(input("Enter Maths subject marks"))
+sub02 = int(input("Enter Hindi subject marks"))
+
+total = sub01 + sub02 
+
+if total > 40 and total > 100 :
+    print("The student has passed! Happy ")
+else:
+    print("The student has not passed ! Sad")
+

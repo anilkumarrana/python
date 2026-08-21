@@ -103,3 +103,12 @@ print (str.strip())
 # 4. replace() :- This method replaces all occurrences of a specified substiring with another substring in a string.
 str = "Anil is a good boy"
 print (str.replace("Anil","sunil"))
+
+
+# Global and local variable :- A global variable is a variable that is defined outside of any function and can be accessed from any part of the program. A local variable is a variable that is defined inside a function and can only be accessed within that function.
+
+nam = "Anil"
+
+def myfun():
+    print ("My name is" ,nam)
+myfun()
