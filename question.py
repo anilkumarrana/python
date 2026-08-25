@@ -1,6 +1,4 @@
 
-from array import 
-
 # Write the program print "Hello world"
 print("Hello, World")
 
@@ -306,4 +304,285 @@ if total > 40 and total > 100 :
     print("The student has passed! Happy ")
 else:
     print("The student has not passed ! Sad")
+
+
+
+
+# List :- List are used for store multiple data in a sigle variable.
+# List is changeable and allow duplicate value. 
+
+
+# List are one of 4 build in data type in python used to store collection of data, The other 3 are Tuple, set and dictionnary.
+
+# List are creatind using the square brackets.
+
+
+cars = ["Ranult","Nissan", "Toyota", "Maruti" ]
+
+print(cars)
+
+
+# list itema are ordered , changeable and allow duplicate values.
+
+# List item are indexed, the first item had index[0] , the second item has index[1] etc .
+
+# when we say that lists are ordered , it means that the item have a defind order, and that order will not change.
+
+# Allow duplicate value 
+
+name = ["Anil", "suniana" ,"Sunil", "Sunaina", "Anil", "Buchu", "Sunaina"]
+
+print(name)
+print(type(name))
+
+
+
+
+# Function :- Function is a block of code which only runs when it is called.
+# Function can return data as a result.
+# in python a function defind using def keyword , following by a function and paranthese.
+
+def my_Function():
+    print("Welcome to python function")
+
+my_Function()
+
+
+def greet():
+    print("Hello, function!")
+
+greet()
+
+
+def get_greeting():
+    return("Hello from a function")
+
+message = get_greeting()
+print(message)
+
+# Function can send data back to the code that called them using the return statement.
+# When the function reaches a retur  statement , it stop executing and send the result back.
+
+
+
+# You can use return directly.
+
+# Using the return value directly 
+
+def get_value():
+    return("return using directly")
+
+print(get_value())
+
+
+
+# Write a program that takes a number from the user and checks whether it is even and odd.
+
+num = int(input("Enter the number:"))
+
+if num % 2 == 0:
+    print ("The number is even" , num)
+
+else:
+    print("The number is odd" , num)
+
+# Write the program that takes three numbers and find largest number.
+
+num1 = int(input("Enter the number one"))
+
+num2 = int(input("Enter the number two "))
+
+num3 = int(input("Enter the number three "))
+
+if num1 > num2 :
+    print("The number one are greather then number two")
+elif num2 > num3:
+    print("The number two are greather then numbre three")
+
+else:
+    print("The number three greather then both one and two")
+
+
+# write a program that takes a string and count how many vewels (a,e,i,o,u) it contains.
+# Enter text 
+
+text = str(input("Enter the text "))
+
+velwo = "aeiou"
+count = 0
+
+for char in text.lower():
+    if char in velwo:
+        count +=1 
+
+
+print("Number of vowels:",count)
+
+
+# Write the program that takes a string and count how many vewels consonants it contains.
+
+text01 = str(input("Enter the text and word !"))
+
+velwels = "aeiou"
+count = 0
+
+for char in text01.lower():
+    if char.isalnum() and char not in velwels:
+        count +=1 
+
+print("Number of consonants" , count)
+
+
+
+# Funcation :- If a function does not return statment, It return None by defalut.
+
+# Argumrnt :- Informtion can be passed into as argument.
+
+# Argument are specified after the function name, Inside the parenthese. You can add as many argument as you want, Just saparate them with comma. 
+
+# Call by function 
+def my_Fun(name):
+    print("Your name is ", name )
+
+my_Fun("Anil")
+
+
+def details(a,b):
+    c = a + b 
+    print ("The sum of two number", c)
+
+details(20,30)
+
+
+# call by variabe 
+
+def  my_details(name = "Anil" , age = 23 ):
+    print ("This is my details", name , age)
+
+my_details()
+
+
+# Parametera vs argument 
+
+# The terms parameter and argument can be used for same thing: Information that are passed into a funcction.
+
+# A Parameter is the variable listed inside the parethese in the function definition.
+# A Argument is the actual value the is sent to the function when it is called.
+
+
+def my_fun(name): # This is parameter 
+    print ("Your name is " , name)
+
+my_Fun("suniana") # This is argument.
+
+
+# Positional argument :- When you call a function with argument without using keyword are called positional argument.
+
+def my_fun(name, collge):
+    print("My name is", name)
+    print("I have complete B.tech from ", collge)
+
+
+my_fun("Anil" , "SIT Jaipur")
+
+
+# can a funcction return the multiple value 
+# yes 
+
+
+def cal(a ,b):
+    return a + b , a - b
+
+x, y = cal(23,34)
+
+print(x)
+print(y)
+
+
+# Local variable:- The local variable is defind the inside of the function
+
+def my_fun():
+
+    a = 10
+    print(a)
+
+my_fun()
+
+# global variable :- The global variable is defind the outside of the funaction.
+
+a = 20 
+
+def test():
+    print(a)
+
+test()
+
+
+# write a program to take two number and print their sum.
+# input 10 , 20
+# output = 30
+
+def my_fun(a,b):
+     
+     c = a + b
+
+     print("The sum of two number" , c)
+
+my_fun(10 ,20)
+
+# write a program that take a number and returns whether it is even and odd.
+
+def my_fun():
+
+    a = 7 
+
+    if a % 2 == 0:
+        print("The number is odd" , a)
+    else:
+        print("The number is even" , a)
+
+my_fun()
+
+
+# write a  program and take number by the user and check given number is even and  odd.
+
+def my_fun():
+    num = int(input("Enter the number"))
+
+    if num % 2 == 0:
+        print("The given number is even" , num)
+
+    else:
+        print("The given number is odd" , num)
+
+my_fun()
+
+
+# write a function that take two number and return the larger number.
+# Input = 15,25
+# output = 25
+
+def my_fun(a , b):
+
+    if a > b:
+        print("B is the greather then to A" , a)
+    else:
+        print("A is the greather then to B" , b)
+
+my_fun(15 , 25)
+
+
+
+# Write the function and print the given number of square.
+
+def my_fun():
+
+    num = int(input("Enter The number"))
+
+    num2 = num * num 
+
+    print("The square of" , num2)
+
+my_fun()
+
 
