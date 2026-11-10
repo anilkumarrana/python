@@ -586,3 +586,144 @@ def my_fun():
 my_fun()
 
 
+
+
+# Write a program to check whether a number is positive, negative or zero.
+
+def my_fun():
+    num = int (input("Enter the number: "))
+
+    if num == 0:
+        print("The given number is zero" , num)
+    elif num < 0:
+        print("The given number is negative" , num)
+    else:
+        print ("The given number is positive" , num)
+
+my_fun()
+
+
+# Write the program to swap two numbers.
+
+a = 20
+b = 30
+
+print("The value of given number" , a , b)
+
+c = a
+a = b 
+b = c
+
+print ("a" , a)
+print("b" , b)
+
+# Write the program and calculte the factorial of a number.
+
+num = int(input("Enter the number "))
+
+fact = 1 
+
+for i in range(1, num + 1 ):
+
+    fact = fact * i 
+
+print("The factorial numbers are " , num , "is" , fact)
+
+
+# By using while loop
+
+n =  5 
+
+factorial = 1 
+
+fact = 1 
+
+while fact <= n:
+    factorial = factorial * fact
+    fact = fact + 1
+
+print("The factorial number" , n , "is" , factorial)
+
+
+
+num = int(input("Enter the number "))
+
+fact = 1 
+
+if num == 0:
+    print("please enter number greather then 0")
+
+    for i in range(1, num + 1):
+
+        fact = fact * i
+
+print("The factorial number " , num , "is" , fact)
+
+
+# print number from 1 to 100 using loop 
+
+for i in range (1,101):
+    print(i)
+
+
+
+# Write a program and print multiplication of given number.
+
+
+num = int(input("Enter the number: "))
+
+for i in range(1,11):
+    table = num * i
+    print(num, "x" , i , "=" , table )
+
+
+
+
+
+
+
+data = {}
+
+print(type(data))
+
+name = "Sunaina"
+
+print(name[2:8:-2])
+
+
+# 
+
+def my_fun():
+    str1 = str(input("Enter first string"))
+    str2 = str (input("Enter second string"))
+
+    s1 = set(str1)
+    s2 = set(str2)
+
+    s3 = s1 and s2
+
+    print("Comman word" , s3)
+
+my_fun()
+
+
+# second method 
+
+str1 = str(input("Enter first string"))
+str2 = str (input("Enter second string"))
+
+common = ""
+
+for char in str1:
+    if char in str2 and char not in common:
+        common += char
+
+
+print("Common letter" , common)
+
+
+# write a python program to count the frequency of words appearing in a string.
+
+text = str(input("Enter the paragraph: "))
+
+text.split()
